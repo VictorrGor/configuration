@@ -79,6 +79,7 @@
   pip:
     requirements: "{{ xqueue_openstack_requirements_file }}"
     virtualenv: "{{ xqueue_venv_dir }}"
+    virtualenv_python: 'python3.5'
     state: present
     extra_args: "-i {{ COMMON_PYPI_MIRROR_URL }} --exists-action w"
   become_user: "{{ xqueue_user }}"
