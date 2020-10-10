@@ -120,7 +120,7 @@ XQUEUE_CONFIG:
   SESSION_COOKIE_SECURE: "{{ XQUEUE_SESSION_COOKIE_SECURE }}"
   CSRF_COOKIE_SECURE: "{{ XQUEUE_CSRF_COOKIE_SECURE }}"
 
-XQUEUE_VERSION: "master"
+XQUEUE_VERSION: "open-release/hawthorn.master"
 XQUEUE_GIT_IDENTITY: !!null
 
 XQUEUE_REPOS:
@@ -160,6 +160,7 @@ xqueue_environment:
 
 xqueue_requirements_file:      "{{ xqueue_code_dir }}/requirements.txt"
 xqueue_openstack_requirements_file: "{{ xqueue_code_dir }}/openstack-requirements.txt"
+xqueue_source_repo: "https://github.com/edx/xqueue.git"
 
 # These packages are required for the xqueue server,
 # copied from the LMS role for now since there is a lot
